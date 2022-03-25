@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#E0F7FA"
+    >
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        >
+    <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:text="@string/team_a"
+       android:textSize="20sp"
+       android:textColor="@color/white"
+       android:background="@color/purple_500"
+       android:textStyle="bold"
+       android:padding="10dp"
+       android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/ScoreOfA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/_0" />
+
+    <Button
+        android:id="@+id/incrementThree1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:onClick="incrementThreeOfA"
+        android:text="@string/_3_points"
+        tools:ignore="UsingOnClickInXml" />
+    <Button
+        android:id="@+id/incrementTwo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:onClick="incrementTwoOfA"
+        android:text="@string/_2_points"
+        tools:ignore="UsingOnClickInXml" />
+    <Button
+        android:id="@+id/incrementOne1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:onClick="incrementOneOfA"
+        android:text="@string/free_throw"
+        tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/team_b"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/purple_500"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/ScoreOfB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/_0" />
+
+    <Button
+        android:id="@+id/incrementThree2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:onClick="incrementThreeOfB"
+        android:text="@string/_3_points"
+        tools:ignore="UsingOnClickInXml" />
+    <Button
+        android:id="@+id/incrementTwo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:onClick="incrementTwoOfB"
+        android:text="@string/_2_points"
+        tools:ignore="UsingOnClickInXml" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:onClick="incrementOneOfB"
+        android:text="@string/free_throw"
+        tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content">
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ResetScore"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/reset"
+            tools:ignore="UsingOnClickInXml"/>
+    </LinearLayout>
+</LinearLayout>

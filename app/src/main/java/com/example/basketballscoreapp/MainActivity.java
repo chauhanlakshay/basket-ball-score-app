@@ -45,7 +45,9 @@ public class MainActivity extends AppCompatActivity {
     public void ResetScore(View view){
         TextView aScore = findViewById(R.id.ScoreOfA);
         aScore.setText("" + 0);
+        score1 = 0;
         TextView bScore = findViewById(R.id.ScoreOfB);
+        score2 = 0;
         bScore.setText("" + 0);
     }
 }
